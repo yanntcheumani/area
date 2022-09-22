@@ -15,4 +15,3 @@ Si il y a une erreur lancer :
 flutter clean
 ```
 Puis essayer de relancer la commande pour run
-
