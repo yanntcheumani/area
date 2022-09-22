@@ -22,3 +22,4 @@
     "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/root/workspace,type=bind,consistency=delegated",
     "workspaceFolder": "/root/workspace"
 }
+
