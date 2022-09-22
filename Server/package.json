@@ -1,0 +1,22 @@
+{
+  "name": "b-dev-500-ber-5-1-area-yann-arthur.tcheumani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechPromo2025/B-DEV-500-BER-5-1-area-yann-arthur.tcheumani.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechPromo2025/B-DEV-500-BER-5-1-area-yann-arthur.tcheumani/issues"
+  },
+  "homepage": "https://github.com/EpitechPromo2025/B-DEV-500-BER-5-1-area-yann-arthur.tcheumani#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
