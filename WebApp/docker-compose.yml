@@ -1,7 +1,16 @@
-version: "3"
+version: '3'
 
 services:
-  web:
-    build: .
-    ports:
-      - "5000:80"
+  svelte-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: area_front
+    container_name: container_front
+    restart: unless-stopped
+    command: npm run dev
+    network_mode: "host"
+    # ports:
+    #     - "8080:5173"
+
+    #  -- --host --port 8080

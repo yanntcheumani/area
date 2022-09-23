@@ -1,16 +1,12 @@
-FROM node:16 AS build
+FROM node:latest
 
+
+# install dependencies
 WORKDIR /app
+RUN npm install npm@8.19.2
+COPY . .
+RUN npm i
 
-COPY package.json ./
-COPY package-lock.json ./
-RUN npm install
-COPY . ./
+EXPOSE 8080
+
 RUN npm run build
-RUN ls
-
-FROM nginx:1.19-alpine
-COPY --from=build /app/build /usr/share/nginx/html
-
-# Build container => sudo docker build . -t area_front
-# Run container => sudo docker run --rm --name=area_front -p 5000:80 area_front
